@@ -1,0 +1,113 @@
+table {
+    --table-color: hsl(200deg 60% 25%);
+    --border: 0.1rem solid var(--table-color);
+
+    border-collapse: collapse;
+
+    thead,
+    tbody {
+    }
+
+    thead {
+        background-color: var(--table-color);
+        color: var(--color-gray-98);
+
+        position: sticky;
+        inset-block-start: 0;
+
+        tr {
+            th {
+                padding: 1rem;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            &:not(:last-of-type) {
+                border-block-end: var(--border);
+            }
+
+            td {
+                padding: 1rem;
+
+                .category,
+                .difficulty {
+                    font-size: 0.75em;
+                    line-height: 1;
+                    text-transform: uppercase;
+                }
+
+                .category {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0.2rem;
+
+                    &::before,
+                    &::after {
+                        content: var(--emoji);
+
+                        font-family: "Noto Color Emoji", sans-serif;
+                    }
+
+                    &--application {
+                        --emoji: "🖥";
+                    }
+
+                    &--component {
+                        --emoji: "🧩";
+                    }
+
+                    &--feature {
+                        --emoji: "💎️";
+                    }
+
+                    &--game {
+                        --emoji: "🎮";
+                    }
+
+                    &--showcase {
+                        --emoji: "🖼";
+                    }
+
+                    &--tools {
+                        --emoji: "🛠";
+                    }
+                }
+
+                .difficulty {
+                    background-color: var(--background-color);
+                    color: var(--color);
+
+                    width: fit-content;
+
+                    margin-inline: auto;
+                    padding: 0.5em 0.75em;
+
+                    border-radius: 999rem;
+
+                    &--easy {
+                        --background-color: hsl(120deg 50% 92%);
+                        --color: hsl(120deg 100% 20%);
+                    }
+
+                    &--medium {
+                        --background-color: hsl(50deg 50% 92%);
+                        --color: hsl(50deg 100% 30%);
+                    }
+
+                    &--hard {
+                        --background-color: hsl(30deg 100% 92%);
+                        --color: hsl(30deg 100% 40%);
+                    }
+
+                    &--brutal {
+                        --background-color: hsl(0deg 50% 92%);
+                        --color: hsl(0deg 100% 20%);
+                    }
+                }
+            }
+        }
+    }
+}

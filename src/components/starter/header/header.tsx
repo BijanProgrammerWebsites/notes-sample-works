@@ -1,8 +1,10 @@
 import {component$, useStylesScoped$} from '@builder.io/qwik';
-import HeaderStyles from './header.scss';
 
+import HEADER_STYLES from './header.scss?inline';
+
+// noinspection TypeScriptValidateTypes
 export default component$(() => {
-    useStylesScoped$(HeaderStyles);
+    useStylesScoped$(HEADER_STYLES);
 
     return (
         <header>

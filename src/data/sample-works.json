@@ -1,0 +1,282 @@
+[
+    {
+        "category": "application",
+        "difficulty": "hard",
+        "title": "TODO"
+    },
+    {
+        "category": "application",
+        "difficulty": "hard",
+        "title": "News"
+    },
+    {
+        "category": "application",
+        "difficulty": "hard",
+        "title": "Weather"
+    },
+    {
+        "category": "application",
+        "difficulty": "hard",
+        "title": "Contacts (Samsung)"
+    },
+    {
+        "category": "application",
+        "difficulty": "brutal",
+        "title": "Kanban Board"
+    },
+    {
+        "category": "application",
+        "difficulty": "brutal",
+        "title": "Messenger"
+    },
+    {
+        "category": "application",
+        "difficulty": "brutal",
+        "title": "E-commerce"
+    },
+    {
+        "category": "application",
+        "difficulty": "brutal",
+        "title": "Movie Download Service (ZarFilm)"
+    },
+    {
+        "category": "application",
+        "difficulty": "brutal",
+        "title": "Music Library"
+    },
+    {
+        "category": "application",
+        "difficulty": "brutal",
+        "title": "Clockify"
+    },
+    {
+        "category": "application",
+        "difficulty": "brutal",
+        "title": "Photo Gallery (Pexels)"
+    },
+    {
+        "category": "application",
+        "difficulty": "brutal",
+        "title": "Food Delivery (SnappFood)"
+    },
+    {
+        "category": "application",
+        "difficulty": "brutal",
+        "title": "Type Speed Tester"
+    },
+    {
+        "category": "component",
+        "difficulty": "easy",
+        "title": "Flip Countdown Timer"
+    },
+    {
+        "category": "component",
+        "difficulty": "easy",
+        "title": "Different Plans Price and Features Comparison Cards (Free, Basic, Pro)"
+    },
+    {
+        "category": "component",
+        "difficulty": "medium",
+        "title": "Calendar, Date/Time Picker"
+    },
+    {
+        "category": "feature",
+        "difficulty": "easy",
+        "title": "Server Price Calculator"
+    },
+    {
+        "category": "feature",
+        "difficulty": "easy",
+        "title": "Feedback and Rating After a Service is Done (Snapp)"
+    },
+    {
+        "category": "feature",
+        "difficulty": "easy",
+        "title": "Creative 404 Pages"
+    },
+    {
+        "category": "feature",
+        "difficulty": "easy",
+        "title": "License Agreement"
+    },
+    {
+        "category": "feature",
+        "difficulty": "medium",
+        "title": "Comment Section with Reply and Voting System"
+    },
+    {
+        "category": "feature",
+        "difficulty": "medium",
+        "title": "Online Transaction (Shaparak)"
+    },
+    {
+        "category": "feature",
+        "difficulty": "medium",
+        "title": "Admin Dashboard with Charts"
+    },
+    {
+        "category": "feature",
+        "difficulty": "medium",
+        "title": "Social Media Growth Tracker Dashboard with Different Statistics and Charts for Views, Likes, New Subscribers and more"
+    },
+    {
+        "category": "feature",
+        "difficulty": "medium",
+        "title": "Quiz (LMS)"
+    },
+    {
+        "category": "feature",
+        "difficulty": "medium",
+        "title": "Operating System App Menu with Lock Screen (Windows 8; Aurora New Tab)"
+    },
+    {
+        "category": "feature",
+        "difficulty": "medium",
+        "title": "Program Installer (Visual Studio Installer)"
+    },
+    {
+        "category": "game",
+        "difficulty": "easy",
+        "title": "Rock, Paper, Scissors"
+    },
+    {
+        "category": "game",
+        "difficulty": "easy",
+        "title": "Tic Tac Toe"
+    },
+    {
+        "category": "game",
+        "difficulty": "hard",
+        "title": "Minesweeper"
+    },
+    {
+        "category": "game",
+        "difficulty": "hard",
+        "title": "Sudoku"
+    },
+    {
+        "category": "game",
+        "difficulty": "hard",
+        "title": "Snake"
+    },
+    {
+        "category": "showcase",
+        "difficulty": "easy",
+        "title": "FAQ"
+    },
+    {
+        "category": "showcase",
+        "difficulty": "easy",
+        "title": "Timeline (CodeStar)"
+    },
+    {
+        "category": "showcase",
+        "difficulty": "medium",
+        "title": "Tournament Bracket"
+    },
+    {
+        "category": "tools",
+        "difficulty": "easy",
+        "title": "Password Generator"
+    },
+    {
+        "category": "tools",
+        "difficulty": "easy",
+        "title": "Calculator"
+    },
+    {
+        "category": "tools",
+        "difficulty": "easy",
+        "title": "Markdown Editor with RTL Support"
+    },
+    {
+        "category": "tools",
+        "difficulty": "easy",
+        "title": "Age Calculator"
+    },
+    {
+        "category": "tools",
+        "difficulty": "easy",
+        "title": "BMI Calculator"
+    },
+    {
+        "category": "tools",
+        "difficulty": "easy",
+        "title": "QR Code Generator"
+    },
+    {
+        "category": "tools",
+        "difficulty": "easy",
+        "title": "Temperature Converter"
+    },
+    {
+        "category": "tools",
+        "difficulty": "easy",
+        "title": "CSS Units Converter"
+    },
+    {
+        "category": "tools",
+        "difficulty": "easy",
+        "title": "Units Converter"
+    },
+    {
+        "category": "tools",
+        "difficulty": "medium",
+        "title": "Clock, Stopwatch, Countdown, Alarm"
+    },
+    {
+        "category": "tools",
+        "difficulty": "medium",
+        "title": "IP Address Tracker"
+    },
+    {
+        "category": "tools",
+        "difficulty": "medium",
+        "title": "URL Shortener"
+    },
+    {
+        "category": "tools",
+        "difficulty": "medium",
+        "title": "Time Tracker for Cities Around The World with Add/Remove Clock Support"
+    },
+    {
+        "category": "tools",
+        "difficulty": "medium",
+        "title": "Mouse Tester"
+    },
+    {
+        "category": "tools",
+        "difficulty": "medium",
+        "title": "Keyboard Tester"
+    },
+    {
+        "category": "tools",
+        "difficulty": "medium",
+        "title": "CSS Gradient Generator"
+    },
+    {
+        "category": "tools",
+        "difficulty": "medium",
+        "title": "CSS Shadow Generator"
+    },
+    {
+        "category": "tools",
+        "difficulty": "medium",
+        "title": "CSS Border Generator"
+    },
+    {
+        "category": "tools",
+        "difficulty": "medium",
+        "title": "SVG Waves Generator"
+    },
+    {
+        "category": "tools",
+        "difficulty": "hard",
+        "title": "Binary Search Tree Generator"
+    },
+    {
+        "category": "tools",
+        "difficulty": "hard",
+        "title": "Photo Filter Applier (Instagram)"
+    }
+]
