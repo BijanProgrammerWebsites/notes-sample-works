@@ -1,0 +1,28 @@
+name: Deployment Workflow
+on:
+    push:
+        branches: [master]
+
+jobs:
+    deploy_job:
+        name: Deploy
+        runs-on: ubuntu-latest
+        steps:
+            - name: Establish a Connection to Server and Update Website
+              uses: appleboy/ssh-action@master
+              with:
+                  host: 130.185.76.173
+                  username: root
+                  key: ${{secrets.SSH_KEY}}
+                  port: 22
+                  script: |
+                      cd /repos/notes-sample-works
+                      git fetch
+                      git checkout master
+                      git reset --hard HEAD
+                      git pull origin master
+                      npm i
+                      npm run build
+                      pm2 stop notes-sample-works
+                      pm2 start server/entry.express.js --name notes-sample-works
+                      pm2 save
