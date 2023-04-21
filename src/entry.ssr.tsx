@@ -18,7 +18,6 @@ export default function (opts: RenderToStreamOptions) {
     return renderToStream(<Root />, {
         manifest,
         ...opts,
-        base: '/sample-works/build/',
         // Use container attributes to set attributes on the html tag.
         containerAttributes: {
             lang: 'en-us',

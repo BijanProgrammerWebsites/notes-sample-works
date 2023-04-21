@@ -29,7 +29,7 @@ const buildDir = join(distDir, 'build');
 const PORT = process.env.PORT ?? 3000;
 
 // Create the Qwik City express middleware
-const { router, notFound } = createQwikCity({ render, qwikCityPlan, manifest });
+const { router, notFound } = createQwikCity({ render, qwikCityPlan, manifest, base: '/sample-works/build/' });
 
 // Create the express server
 // https://expressjs.com/
@@ -40,7 +40,7 @@ const app = express();
 
 // Static asset handlers
 // https://expressjs.com/en/starter/static-files.html
-app.use(`/sample-works/build`, express.static(buildDir, { immutable: true, maxAge: '1y' }));
+app.use(`/build`, express.static(buildDir, { immutable: true, maxAge: '1y' }));
 app.use(express.static(distDir, { redirect: false }));
 
 // Use Qwik City's page and endpoint request handler
