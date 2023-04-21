@@ -6,9 +6,8 @@ import HOME_STYLES from './home.scss?inline';
 
 import SAMPLE_WORKS_JSON from '~/data/sample-works.json';
 
-const SAMPLE_WORKS: SampleWork[] = SAMPLE_WORKS_JSON;
+const SAMPLE_WORKS: SampleWork[] = SAMPLE_WORKS_JSON as SampleWork[];
 
-// noinspection TypeScriptValidateTypes
 export default component$(() => {
     useStylesScoped$(HOME_STYLES);
 
@@ -25,12 +24,10 @@ export default component$(() => {
                 {SAMPLE_WORKS.map((sampleWork) => (
                     <tr>
                         <td>
-                            <div className={`category category--${sampleWork.category}`}>{sampleWork.category}</div>
+                            <div class={`category category--${sampleWork.category}`}>{sampleWork.category}</div>
                         </td>
                         <td>
-                            <div className={`difficulty difficulty--${sampleWork.difficulty}`}>
-                                {sampleWork.difficulty}
-                            </div>
+                            <div class={`difficulty difficulty--${sampleWork.difficulty}`}>{sampleWork.difficulty}</div>
                         </td>
                         <td>{sampleWork.title}</td>
                     </tr>

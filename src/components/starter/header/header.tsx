@@ -8,7 +8,7 @@ export default component$(() => {
 
     return (
         <header>
-            <div className="logo">Work Samples</div>
+            <div class="logo">Work Samples</div>
         </header>
     );
 });
