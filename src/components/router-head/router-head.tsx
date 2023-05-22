@@ -1,10 +1,16 @@
-import {component$} from '@builder.io/qwik';
+import {component$, useStyles$} from '@builder.io/qwik';
 import {useDocumentHead, useLocation} from '@builder.io/qwik-city';
+
+import POPPINS_STYLES from './poppins.scss?inline';
+import NOTO_STYLES from './noto.scss?inline';
 
 /**
  * The RouterHead component is placed inside of the document `<head>` element.
  */
 export const RouterHead = component$((): any => {
+    useStyles$(POPPINS_STYLES);
+    useStyles$(NOTO_STYLES);
+
     const head = useDocumentHead();
     const loc = useLocation();
 
@@ -18,10 +24,7 @@ export const RouterHead = component$((): any => {
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <link rel="icon" type="image/svg+xml" href="favicon.ico" />
 
-            <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
-            <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet" />
 
             {head.meta.map((m) => (
                 <meta key={m.key} {...m} />
