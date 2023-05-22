@@ -49,6 +49,18 @@
     --color-danger-darker: hsl(var(--danger-hue) 100% 30%);
     --color-danger-opposite: var(--color-gray-98);
 
+    --color-difficulty-easy: hsl(120deg 100% 20%);
+    --color-difficulty-easy-opposite: hsl(120deg 50% 92%);
+
+    --color-difficulty-medium: hsl(50deg 100% 30%);
+    --color-difficulty-medium-opposite: hsl(50deg 50% 92%);
+
+    --color-difficulty-hard: hsl(30deg 100% 40%);
+    --color-difficulty-hard-opposite: hsl(30deg 100% 92%);
+
+    --color-difficulty-brutal: hsl(0deg 100% 20%);
+    --color-difficulty-brutal-opposite: hsl(0deg 50% 92%);
+
     --color-body-background: var(--color-default-background);
     --color-body-foreground: var(--color-default-foreground);
 
@@ -258,8 +270,58 @@ body {
 
         min-height: 100vh;
 
+        padding-block-end: 4rem;
+
         main {
             flex: 1;
         }
+    }
+}
+
+.category {
+    &--application {
+        --emoji-category: "🖥";
+    }
+
+    &--component {
+        --emoji-category: "🧩";
+    }
+
+    &--feature {
+        --emoji-category: "💎️";
+    }
+
+    &--game {
+        --emoji-category: "🎮";
+    }
+
+    &--showcase {
+        --emoji-category: "🖼";
+    }
+
+    &--tools {
+        --emoji-category: "🛠";
+    }
+}
+
+.difficulty {
+    &--easy {
+        --color-difficulty: var(--color-difficulty-easy);
+        --color-difficulty-opposite: var(--color-difficulty-easy-opposite);
+    }
+
+    &--medium {
+        --color-difficulty: var(--color-difficulty-medium);
+        --color-difficulty-opposite: var(--color-difficulty-medium-opposite);
+    }
+
+    &--hard {
+        --color-difficulty: var(--color-difficulty-hard);
+        --color-difficulty-opposite: var(--color-difficulty-hard-opposite);
+    }
+
+    &--brutal {
+        --color-difficulty: var(--color-difficulty-brutal);
+        --color-difficulty-opposite: var(--color-difficulty-brutal-opposite);
     }
 }

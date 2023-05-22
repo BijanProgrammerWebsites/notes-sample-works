@@ -1,0 +1,29 @@
+.categories {
+    display: grid;
+    gap: 8rem;
+
+    .category {
+        display: grid;
+        gap: 1rem;
+
+        .title {
+            text-transform: uppercase;
+
+            &::before {
+                content: var(--emoji-category) " ";
+
+                font-family: "Noto Color Emoji", sans-serif;
+            }
+        }
+
+        .sample-works {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+            gap: 2rem;
+
+            .sample-work {
+                display: grid;
+            }
+        }
+    }
+}

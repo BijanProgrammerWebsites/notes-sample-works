@@ -1,0 +1,37 @@
+.card {
+    background-color: var(--color-body-background);
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+
+    border: 0.1rem solid var(--color-difficulty-opposite);
+
+    .difficulty {
+        background-color: var(--color-difficulty-opposite);
+        color: var(--color-difficulty);
+
+        min-inline-size: 6rem;
+
+        padding: 0.5rem;
+
+        rotate: 180deg;
+
+        font-size: 0.75em;
+        line-height: 1;
+        text-align: center;
+        text-transform: uppercase;
+        writing-mode: tb;
+    }
+
+    .title {
+        overflow: hidden;
+
+        margin-block: auto;
+
+        font-size: 1.8rem;
+        line-height: 1.5;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
