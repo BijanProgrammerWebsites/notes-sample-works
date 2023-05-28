@@ -1,7 +1,8 @@
 import {component$, useStylesScoped$} from '@builder.io/qwik';
 import type {SampleWork} from '~/models/sample-work.model';
 
-import {TbCheck, TbExternalLink} from '@qwikest/icons/tablericons';
+import IcBaselineLaunch from '~/icons/IcBaselineLaunch';
+import IcBaselineCheck from '~/icons/IcBaselineCheck';
 
 import SAMPLE_WORK_CARD_STYLES from './sample-work-card.scss?inline';
 
@@ -18,12 +19,12 @@ export default component$<Props>(({sampleWork}) => {
 
             <div class="title">
                 <div class="text">{sampleWork.title}</div>
-                {sampleWork.url && <TbExternalLink></TbExternalLink>}
+                {sampleWork.url && <IcBaselineLaunch></IcBaselineLaunch>}
             </div>
 
             {sampleWork.isDone && (
                 <div class="checkmark">
-                    <TbCheck></TbCheck>
+                    <IcBaselineCheck></IcBaselineCheck>
                 </div>
             )}
         </>
@@ -33,7 +34,7 @@ export default component$<Props>(({sampleWork}) => {
 
     if (sampleWork.url) {
         return (
-            <a class={classNames} title={sampleWork.title} href={sampleWork.url}>
+            <a class={classNames} title={sampleWork.title} href={sampleWork.url} target="_blank">
                 {CardContent}
             </a>
         );
