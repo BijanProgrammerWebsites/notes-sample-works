@@ -246,8 +246,6 @@ img {
 }
 
 svg {
-    fill: currentcolor !important;
-
     display: block;
 
     width: 1em !important;
@@ -275,32 +273,6 @@ body {
         main {
             flex: 1;
         }
-    }
-}
-
-.category {
-    &--application {
-        --emoji-category: "🖥";
-    }
-
-    &--component {
-        --emoji-category: "🧩";
-    }
-
-    &--feature {
-        --emoji-category: "💎️";
-    }
-
-    &--game {
-        --emoji-category: "🎮";
-    }
-
-    &--showcase {
-        --emoji-category: "🖼";
-    }
-
-    &--tools {
-        --emoji-category: "🛠";
     }
 }
 

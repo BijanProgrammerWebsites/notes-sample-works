@@ -1,19 +1,21 @@
 .categories {
     display: grid;
-    gap: 8rem;
 
     .category {
+        background-color: var(--color-default-background);
+        color: var(--color-default-foreground);
+
         display: grid;
         gap: 1rem;
 
+        padding-block: 4rem;
+
         .title {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
             text-transform: uppercase;
-
-            &::before {
-                content: var(--emoji-category) " ";
-
-                font-family: "Noto Color Emoji", sans-serif;
-            }
         }
 
         .sample-works {

@@ -1,9 +1,13 @@
 .card {
-    background-color: var(--color-body-background);
+    --sapcing: 1rem;
+
+    background-color: var(--color-default-background);
 
     display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 1rem;
+    grid-template-columns: auto 1fr auto;
+    gap: var(--sapcing);
+
+    padding-inline-end: var(--sapcing);
 
     border: 0.1rem solid var(--color-difficulty-opposite);
 
@@ -15,6 +19,8 @@
 
         padding: 0.5rem;
 
+        border-block-end: 0.2rem solid var(--color-difficulty-opposite);
+
         rotate: 180deg;
 
         font-size: 0.75em;
@@ -25,13 +31,48 @@
     }
 
     .title {
-        overflow: hidden;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        min-width: 0;
 
         margin-block: auto;
 
         font-size: 1.8rem;
         line-height: 1.5;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+
+        .text {
+            overflow: hidden;
+
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .icon {
+            flex-shrink: 0;
+        }
+    }
+
+    .checkmark {
+        margin-block: auto;
+
+        font-size: 1.8rem;
+    }
+
+    &.done {
+        background-color: var(--color-difficulty-opposite);
+        color: var(--color-difficulty);
+
+        .difficulty {
+            border-block-end-color: var(--color-default-background);
+        }
+    }
+
+    &[href] {
+        .title {
+            text-decoration: underline dotted;
+            text-underline-offset: 0.2em;
+        }
     }
 }

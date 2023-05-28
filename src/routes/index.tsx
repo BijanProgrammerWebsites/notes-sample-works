@@ -1,14 +1,10 @@
 import {component$, useStylesScoped$} from '@builder.io/qwik';
 import type {DocumentHead} from '@builder.io/qwik-city';
 
-import type {SampleWork} from '~/models/sample-work.model';
-
 import SampleWorkCards from '~/components/sample-work-cards/sample-work-cards';
 
 import HOME_STYLES from './home.scss?inline';
-
-import SAMPLE_WORKS_JSON from '~/data/sample-works.json';
-const SAMPLE_WORKS: SampleWork[] = SAMPLE_WORKS_JSON as SampleWork[];
+import {SAMPLE_WORKS} from '~/data/sample-works.data';
 
 export default component$(() => {
     useStylesScoped$(HOME_STYLES);

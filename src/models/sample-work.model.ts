@@ -5,4 +5,6 @@ export interface SampleWork {
     category: Category;
     difficulty: Difficulty;
     title: string;
+    isDone?: boolean;
+    url?: string;
 }
