@@ -8,20 +8,6 @@ jobs:
         name: Deploy
         runs-on: self-hosted
 
-        strategy:
-            matrix:
-                node-version: [18.x]
-
         steps:
             - uses: actions/checkout@v2
-            - name: Uses Node.js ${{ matrix.node-version }}
-              uses: actions/setup-node@v1
-              with:
-                  node-version: ${{ matrix.node-version }}
-            - run: |
-                  npm i
-                  npm run build
-            - run: |
-                  pm2 stop notes-sample-works || true
-                  pm2 start server/entry.express.js --name notes-sample-works
-                  pm2 save
+            - run: pm2 restart notes-sample-works
