@@ -10,4 +10,15 @@ jobs:
 
         steps:
             - uses: actions/checkout@v3
-            - run: pm2 restart notes-sample-works
+
+            - name: Install Dependencies
+              run: npm i
+
+            - name: Build
+              run: npm run build
+
+            - name: Restart Server
+              run: |
+                  pm2 stop notes-sample-works || true
+                  pm2 start server/entry.express.js --name notes-sample-works
+                  pm2 save
