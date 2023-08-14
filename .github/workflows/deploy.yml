@@ -21,7 +21,6 @@ jobs:
             - run: |
                   npm i
                   npm run build
-                  pwd
                   pm2 stop notes-sample-works || true
                   pm2 start server/entry.express.js --name notes-sample-works
                   pm2 save
