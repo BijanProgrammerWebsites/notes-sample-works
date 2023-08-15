@@ -5,20 +5,6 @@ on:
 
 jobs:
     deploy:
-        name: Deploy
-        runs-on: self-hosted
-
-        steps:
-            - uses: actions/checkout@v3
-
-            - name: Install Dependencies
-              run: npm i
-
-            - name: Build
-              run: npm run build
-
-            - name: Restart Server
-              run: |
-                  pm2 stop notes-sample-works || true
-                  pm2 start server/entry.express.js --name notes-sample-works
-                  pm2 save
+        uses: BijanProgrammerWebsites/hub/.github/workflows/deploy-qwik.yml@master
+        with:
+            process-name: notes-sample-works
