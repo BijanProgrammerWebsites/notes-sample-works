@@ -3,6 +3,7 @@ export enum Category {
     COMPONENT = 'component',
     FEATURE = 'feature',
     GAME = 'game',
+    LANDING = 'landing',
     SHOWCASE = 'showcase',
     TOOLS = 'tools',
 }

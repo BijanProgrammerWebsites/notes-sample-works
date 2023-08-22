@@ -164,6 +164,36 @@ export const SAMPLE_WORKS: SampleWork[] = [
         title: 'Snake',
     },
     {
+        category: Category.LANDING,
+        difficulty: Difficulty.HARD,
+        title: 'Iran: Culture | History | Sightseeing | Agriculture | Technical, Sports and Military Achievements',
+    },
+    {
+        category: Category.LANDING,
+        difficulty: Difficulty.EASY,
+        title: 'Auto Repair Shop',
+    },
+    {
+        category: Category.LANDING,
+        difficulty: Difficulty.EASY,
+        title: 'Interior Decorator',
+    },
+    {
+        category: Category.LANDING,
+        difficulty: Difficulty.EASY,
+        title: 'Restaurant',
+    },
+    {
+        category: Category.LANDING,
+        difficulty: Difficulty.EASY,
+        title: 'Board Game Coffee Shop (Fekrkade)',
+    },
+    {
+        category: Category.LANDING,
+        difficulty: Difficulty.EASY,
+        title: 'Barber Shop',
+    },
+    {
         category: Category.SHOWCASE,
         difficulty: Difficulty.EASY,
         title: 'FAQ',
