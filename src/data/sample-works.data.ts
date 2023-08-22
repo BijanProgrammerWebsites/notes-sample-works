@@ -239,6 +239,8 @@ export const SAMPLE_WORKS: SampleWork[] = [
         category: Category.TOOLS,
         difficulty: Difficulty.MEDIUM,
         title: 'URL Shortener',
+        isDone: true,
+        url: 'https://schort.ir/',
     },
     {
         category: Category.TOOLS,
