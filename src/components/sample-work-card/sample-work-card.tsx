@@ -30,7 +30,9 @@ export default component$<Props>(({sampleWork}) => {
         </>
     );
 
-    const classNames = `card difficulty--${sampleWork.difficulty} ${sampleWork.isDone ? 'done' : ''}`;
+    const classNames = `card difficulty--${sampleWork.difficulty} ${sampleWork.isPriority ? 'priority' : ''} ${
+        sampleWork.isDone ? 'done' : ''
+    }`;
 
     if (sampleWork.url) {
         return (

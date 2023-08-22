@@ -60,6 +60,18 @@
         font-size: 1.8rem;
     }
 
+    &.priority {
+        position: relative;
+
+        &::after {
+            content: "⭐️";
+
+            position: absolute;
+            inset-block-start: calc(-1 * var(--sapcing));
+            inset-inline-start: calc(-1 * var(--sapcing));
+        }
+    }
+
     &.done {
         background-color: var(--color-difficulty-opposite);
         color: var(--color-difficulty);
