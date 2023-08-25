@@ -164,8 +164,17 @@ export const CATEGORIES: Category[] = [
                 isPriority: true,
             },
             {
+                difficulty: Difficulty.MEDIUM,
+                title: 'Car Exhibition',
+                isPriority: true,
+            },
+            {
                 difficulty: Difficulty.EASY,
                 title: 'Auto Repair Shop',
+            },
+            {
+                difficulty: Difficulty.EASY,
+                title: 'Nursing',
             },
             {
                 difficulty: Difficulty.EASY,
@@ -182,6 +191,36 @@ export const CATEGORIES: Category[] = [
             {
                 difficulty: Difficulty.EASY,
                 title: 'Barber Shop',
+            },
+            {
+                difficulty: Difficulty.EASY,
+                title: 'Photo Shoot',
+            },
+            {
+                difficulty: Difficulty.EASY,
+                title: 'Grocery Delivery',
+            },
+            {
+                difficulty: Difficulty.EASY,
+                title: 'Hotel',
+            },
+            {
+                difficulty: Difficulty.EASY,
+                title: 'Gym',
+            },
+            {
+                difficulty: Difficulty.EASY,
+                title: 'Real Estate',
+            },
+        ],
+    },
+    {
+        title: 'Only Frontend',
+        sampleWorks: [
+            {
+                difficulty: Difficulty.MEDIUM,
+                title: 'Admin Panel',
+                isPriority: true,
             },
         ],
     },
