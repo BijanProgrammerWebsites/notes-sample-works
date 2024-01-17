@@ -248,7 +248,7 @@ export const CATEGORIES: Category[] = [
                 difficulty: Difficulty.EASY,
                 title: 'Password Generator',
                 isDone: true,
-                url: 'https://projects.bijanprogrammer.com/passage/',
+                url: 'https://passaid.ir/',
             },
             {
                 difficulty: Difficulty.EASY,
