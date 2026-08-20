@@ -1,11 +1,13 @@
 name: Deploy
 
 on:
-    push:
-        branches: [master]
+  push:
+    branches: [master]
 
 jobs:
-    deploy:
-        uses: BijanProgrammerWebsites/hub/.github/workflows/deploy-qwik.yml@master
-        with:
-            process-name: notes-sample-works
+  deploy:
+    uses: BijanProgrammerWebsites/hub/.github/workflows/deploy-vite.yml@master
+    with:
+      domain: notes.bijanprogrammer.com
+      base-href: /sample-works/
+    secrets: inherit

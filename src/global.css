@@ -1,0 +1,117 @@
+:root {
+  --color-gray-98: hsl(220deg 12% 98%);
+  --color-gray-80: hsl(220deg 12% 80%);
+  --color-gray-10: hsl(220deg 12% 10%);
+
+  --color-default-background: var(--color-gray-98);
+  --color-default-foreground: var(--color-gray-10);
+
+  --color-difficulty-easy: hsl(120deg 100% 20%);
+  --color-difficulty-easy-opposite: hsl(120deg 50% 92%);
+
+  --color-difficulty-medium: hsl(50deg 100% 30%);
+  --color-difficulty-medium-opposite: hsl(50deg 50% 92%);
+
+  --color-difficulty-hard: hsl(30deg 100% 40%);
+  --color-difficulty-hard-opposite: hsl(30deg 100% 92%);
+
+  --color-difficulty-brutal: hsl(0deg 100% 20%);
+  --color-difficulty-brutal-opposite: hsl(0deg 50% 92%);
+
+  --full-width: 120rem;
+  --full-width-padding-inline: calc(max(100% - var(--full-width), 4rem) / 2);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Poppins, sans-serif;
+  font-size: 62.5%;
+}
+
+input,
+label,
+select,
+textarea,
+button,
+fieldset,
+legend,
+datalist,
+output,
+option,
+optgroup {
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+svg {
+  display: block;
+
+  width: 1em !important;
+  height: 1em !important;
+}
+
+body {
+  background-color: var(--color-default-background);
+  color: var(--color-default-foreground);
+
+  padding-inline: var(--full-width-padding-inline);
+
+  font-size: 1.6rem;
+
+  #app {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    min-height: 100vh;
+
+    padding-block-end: 4rem;
+
+    main {
+      flex: 1;
+    }
+  }
+}
+
+.difficulty {
+  &.easy {
+    --color-difficulty: var(--color-difficulty-easy);
+    --color-difficulty-opposite: var(--color-difficulty-easy-opposite);
+  }
+
+  &.medium {
+    --color-difficulty: var(--color-difficulty-medium);
+    --color-difficulty-opposite: var(--color-difficulty-medium-opposite);
+  }
+
+  &.hard {
+    --color-difficulty: var(--color-difficulty-hard);
+    --color-difficulty-opposite: var(--color-difficulty-hard-opposite);
+  }
+
+  &.brutal {
+    --color-difficulty: var(--color-difficulty-brutal);
+    --color-difficulty-opposite: var(--color-difficulty-brutal-opposite);
+  }
+}

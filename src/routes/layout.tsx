@@ -1,15 +1,15 @@
-import {component$, Slot} from '@builder.io/qwik';
+import { component$, Slot } from "@builder.io/qwik";
 
-import Header from '~/components/starter/header/header';
+import Header from "~/components/starter/header/header";
 
 export default component$(() => {
-    return (
-        <div id="app">
-            <Header></Header>
+  return (
+    <div id="app">
+      <Header></Header>
 
-            <main>
-                <Slot></Slot>
-            </main>
-        </div>
-    );
+      <main>
+        <Slot></Slot>
+      </main>
+    </div>
+  );
 });

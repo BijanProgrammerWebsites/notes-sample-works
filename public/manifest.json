@@ -1,8 +1,9 @@
 {
-    "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-    "short_name": "Sample Works",
-    "name": "Sample Works by BijanProgrammer",
-    "start_url": ".",
-    "display": "standalone",
-    "background_color": "#fafafa"
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "Sample Works",
+  "short_name": "Sample Works",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fafafa",
+  "description": "Sample Works by BijanProgrammer"
 }

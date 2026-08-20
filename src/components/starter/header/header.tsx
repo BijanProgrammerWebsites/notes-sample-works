@@ -1,13 +1,13 @@
-import {component$, useStylesScoped$} from '@builder.io/qwik';
+import { component$, useStylesScoped$ } from "@builder.io/qwik";
 
-import HEADER_STYLES from './header.scss?inline';
+import styles from "./header.css?inline";
 
 export default component$(() => {
-    useStylesScoped$(HEADER_STYLES);
+  useStylesScoped$(styles);
 
-    return (
-        <header>
-            <div class="logo">Work Samples</div>
-        </header>
-    );
+  return (
+    <header>
+      <div class="logo">Work Samples</div>
+    </header>
+  );
 });
